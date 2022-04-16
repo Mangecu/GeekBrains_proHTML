@@ -1,32 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
-  border: 0;
-}
+  border: 0; }
 
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-::focus,
-::active {
-  outline: none;
-}
+:focus,
+:active {
+  outline: none; }
 
 a:focus,
 a:active {
-  outline: none;
-}
+  outline: none; }
 
 nav,
 footer,
 header,
 aside {
-  display: block;
-}
+  display: block; }
 
 html,
 body {
@@ -37,45 +34,182 @@ body {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 input, button, textarea {
-  font-family: inherit;
-}
+  font-family: inherit; }
 
 input::-ms-clear {
-  display: none;
-}
+  display: none; }
 
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button::-moz-focus-inner {
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
 a,
 a:visited {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul li {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
-  font-weight: 400;
-}
+  font-weight: 400; }
+
+.header__wrap {
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17); }
+  .header__wrap .header {
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .header__wrap .header .header__logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 27px;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin-right: 3%; }
+      .header__wrap .header .header__logo img {
+        margin-right: 0.85vw; }
+      .header__wrap .header .header__logo span {
+        color: #f16d7f;
+        font-weight: 900; }
+    .header__wrap .header .header__form {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row; }
+      .header__wrap .header .header__form .header__form-wrap {
+        height: 37px;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .header__wrap .header .header__form .header__form-wrap .header__browse-btn {
+          height: 37px;
+          text-transform: capitalize;
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          background-color: #f8f8f8;
+          border: 1px solid #e6e6e6;
+          border-radius: 3px 0 0 3px;
+          padding: 0 8px 0 14px; }
+          .header__wrap .header .header__form .header__form-wrap .header__browse-btn i {
+            transform: translateY(-15%);
+            color: #838383;
+            padding-left: 5px; }
+        .header__wrap .header .header__form .header__form-wrap .header__browse-searsh {
+          height: 37px;
+          border-top: 1px solid #e6e6e6;
+          border-bottom: 1px solid #e6e6e6;
+          width: 18.16vw;
+          min-width: 125px;
+          padding-left: 15px; }
+          .header__wrap .header .header__form .header__form-wrap .header__browse-searsh::placeholder {
+            color: #a4a4a4;
+            font-weight: 300;
+            font-size: 14px; }
+        .header__wrap .header .header__form .header__form-wrap .header__browse-searsh-btn {
+          height: inherit;
+          border: 1px solid #e6e6e6;
+          background-color: #ffffff;
+          border-radius: 0 3px 3px 0;
+          padding: 0 10px 0 11px; }
+          .header__wrap .header .header__form .header__form-wrap .header__browse-searsh-btn i {
+            color: #a4a4a4; }
+    .header__wrap .header .header__login {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 37px; }
+      .header__wrap .header .header__login .header__cart {
+        align-self: end; }
+      .header__wrap .header .header__login .header__login-btn {
+        height: inherit;
+        text-transform: capitalize;
+        font-size: 15px;
+        background-color: #f16d7f;
+        border: 1px solid #f16d7f;
+        color: #ffffff;
+        padding: 0 12px 0 18px;
+        margin-left: 26px; }
+        .header__wrap .header .header__login .header__login-btn i {
+          transform: translateY(-17%);
+          padding-left: 5px;
+          color: #ffffff; }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navigation .nav__list {
+    min-height: 41px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px; }
+    .navigation .nav__list .nav__item {
+      margin-bottom: 5px; }
+      .navigation .nav__list .nav__item .nav__link {
+        text-transform: uppercase;
+        font-weight: 700;
+        align-self: center; }
+    .navigation .nav__list .nav__item:not(:last-child) {
+      margin-right: 2.2vw; }
+
+.main .main__top {
+  background-color: #e8e8e8; }
+  .main .main__top .main__top-content {
+    min-height: 614px;
+    display: flex;
+    align-items: center;
+    background: url("https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/Index_topHeaderBack.png") no-repeat;
+    background-position-x: 80%; }
+    .main .main__top .main__top-content .main__name {
+      border-left: 12px solid #f16d7f;
+      padding-left: 12px; }
+      .main .main__top .main__top-content .main__name h2:first-child {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        line-height: 43px;
+        font-size: 60px;
+        font-weight: 900; }
+      .main .main__top .main__top-content .main__name h2:last-child {
+        text-transform: uppercase;
+        font-size: 40px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 30px;
+        padding-top: 20px; }
+        .main .main__top .main__top-content .main__name h2:last-child span {
+          color: #f16d7f; }
+.main .main__offer {
+  min-height: 971px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+* {
+  font-family: "Lato", sans-serif;
+  color: #222222; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px; }
+
 /*# sourceMappingURL=style.css.map */
