@@ -1,12 +1,14 @@
 .main
    .main__top
       background-color: #e8e8e8
+      margin-bottom: 98px
       .main__top-content
          min-height: 614px
          display: flex
          align-items: center
          background: url("https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/Index_topHeaderBack.png") no-repeat
          background-position-x: 80%
+         background-size: 558px 965px
          .main__name
             border-left: 12px solid #f16d7f
             padding-left: 12px
@@ -26,7 +28,32 @@
                span
                   color: #f16d7f
    .main__offer
-      min-height: 971px
+      min-height: 823px
       display: flex
       flex-direction: row
-      flex-wrap: wrap
+      margin-bottom: 100px
+      .main__offer-wrap
+         display: flex
+         flex-direction: column
+         &:first-child
+            margin-right: 21px
+         .main__offer-item
+            position: relative
+            &:first-child
+               margin-bottom: 20px
+            .main__offer-badge
+               display: flex
+               flex-direction: column
+               position: absolute
+               top: 26px
+               background-color: #ffffff
+               padding: 16px 19px 16px 21px
+               div
+                  text-transform: uppercase
+                  font-size: 18px
+                  font-weight: 900
+                  letter-spacing: 0.025em
+                  &:last-child
+                     font-size: 30px
+                     color: #f16d7f
+
