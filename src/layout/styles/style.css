@@ -279,6 +279,46 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   color: #f16d7f;
 }
+.main .main__fetured {
+  display: flex;
+  flex-direction: column;
+}
+.main .main__fetured .main__fetured-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__fetured .main__fetured-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+.main .main__fetured .main__fetured-title p {
+  letter-spacing: 0.025em;
+  color: #9f9f9f;
+  line-height: 11px;
+  margin-bottom: 60px;
+}
+.main .main__fetured .main__fetured-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main .main__fetured .main__fetured-items .main__item-info {
+  display: flex;
+  flex-direction: column;
+}
+.main .main__fetured .main__fetured-items .main__item-info img {
+  width: 261px;
+  height: 280px;
+}
+.main .main__fetured .main__fetured-items .main__item-info .main__item-discr {
+  display: flex;
+  flex-direction: column;
+}
 
 * {
   font-family: "Lato", sans-serif;
