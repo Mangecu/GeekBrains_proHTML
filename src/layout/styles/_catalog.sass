@@ -140,7 +140,98 @@
                         line-height: 26px
                         font-weight: 600
                         color: #6f6e6e
-
-
-
-
+      .main__catalog-sort
+         padding-left: 9px
+         margin: 42px 0 48px 0
+         background-color: #f3f3f3
+         height: 50px
+         display: flex
+         flex-direction: row
+         align-items: center
+         .main__sort-select
+            display: flex
+            flex-direction: row
+            align-items: center
+            border: 1px solid #ebebeb
+            background-color: #ffffff
+            padding-right: 5px
+            &:first-child
+               margin-right: 10px
+            h2, select
+               height: inherit
+               text-transform: capitalize
+               font-weight: 400
+               color: #6f6e6e
+               line-height: 28px
+            h2
+               border-right: 1px solid #ebebeb
+               padding: 0 8px 0 12px
+            select
+               padding: 0 10px 0 5px
+      .main__catalog-items
+         display: flex
+         flex-direction: row
+         flex-wrap: wrap
+         justify-content: space-between
+         .main__catalog-item
+            position: relative
+            transition: all 0.3s ease-in
+            margin-bottom: 39px
+            .main__catalog-item-info
+               display: flex
+               flex-direction: column
+               img
+                  height: 279px
+                  width: 261px
+                  position: relative
+                  &:nth-child(2n-1)
+                     border: 1px solid #f1f7fa
+               .main__catalog-item-disc
+                  display: flex
+                  flex-direction: column
+                  margin: 19px 0 21px 14px
+                  h3
+                     font-size: 13px
+                     line-height: 1.2
+                     font-weight: 700
+                     text-transform: uppercase
+                  h3:last-child
+                     font-size: 16px
+                     color: #f16d7f
+                     margin-top: 17px
+            &:hover
+               box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+            .main__catalog-item-hover
+               height: 279px
+               position: absolute
+               top: 0
+               display: none
+               img
+                  margin-right: 8px
+               .main__catalog-item-cart
+                  background-color: transparent
+                  display: none
+                  flex-direction: row
+                  align-items: center
+                  position: absolute
+                  top: 98px
+                  left: 70px
+                  border: 2px solid #ffffff
+                  font-weight: 700
+                  font-size: 13px
+                  padding: 10px 13px 7px 12px
+                  color: #ffffff
+            &:hover .main__catalog-item-hover
+               display: flex
+               background-color: rgba(58, 56, 56, 0.6)
+               width: 261px
+               height: 279px
+            &:hover .main__catalog-item-cart
+               display: flex
+      .main__catalog-pages
+         display: flex
+         flex-direction: row
+         justify-content: space-between
+         .main__catalog-pagination
+            display: flex
+            flex-direction: row
