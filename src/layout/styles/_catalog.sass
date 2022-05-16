@@ -184,8 +184,6 @@
                   height: 279px
                   width: 261px
                   position: relative
-                  &:nth-child(2n-1)
-                     border: 1px solid #f1f7fa
                .main__catalog-item-disc
                   display: flex
                   flex-direction: column
@@ -233,5 +231,46 @@
          flex-direction: row
          justify-content: space-between
          .main__catalog-pagination
+            width: 30.89%
+            height: 44px
             display: flex
             flex-direction: row
+            align-items: center
+            border: 1px solid #ebebeb
+            border-radius: 3px
+            .main__pagination-arrow
+               line-height: 26px
+               font-size: 16px
+               margin: 0 15px 0 15px
+               i
+                  color: #aaaaaa
+            .main__pagination-arrow-active i
+               color: #ef5b70
+            .main__pagination-pages
+               line-height: 26px
+               display: flex
+               flex-grow: 1
+               flex-direction: row
+               align-items: center
+               justify-content: space-between
+               .main__pagination-page,
+               span
+                  font-weight: 500
+                  font-size: 16px
+                  color: #c4c4c4
+               .main__page-active
+                  color: #ef5b70
+         .main__catalog-btn
+            height: 44px
+            background-color: #ffffff
+            border: 1px solid #ef5b70
+            border-radius: 3px
+            font-size: 16px
+            line-height: 26px
+            font-weight: 700
+            color: #ef5b70
+            padding: 0 45px 0 47px
+            transition: all 0.3s ease-in-out
+            &:hover
+               background-color: #ef5b70
+               color: #ffffff
