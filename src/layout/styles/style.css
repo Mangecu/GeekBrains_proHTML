@@ -594,7 +594,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main__subscribe-wrap {
-  margin-top: 97px;
   min-height: 438px;
   background: url(https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/subscribeBackground.jpg);
   background-color: rgba(242, 242, 242, 0.5);
@@ -1060,6 +1059,142 @@ h1, h2, h3, h4, h5, h6 {
 .main__catalog .main__catalog-content .main__catalog-pages .main__catalog-btn:hover {
   background-color: #ef5b70;
   color: #ffffff;
+}
+
+.main__cart {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+}
+.main__cart .main__cart-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 12px;
+}
+.main__cart .main__cart-top li {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+  flex-grow: 1;
+}
+.main__cart .main__cart-top li:first-child {
+  flex-grow: 4;
+}
+.main__cart .main__cart-top li:not(:first-child) {
+  text-align: end;
+}
+.main__cart .main__cart-container {
+  display: flex;
+  flex-direction: column;
+}
+.main__cart .main__cart-container .main__cart-item {
+  margin-top: 22px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-logo {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-logo .main__cart-item-disc {
+  margin-top: 13px;
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-logo .main__cart-item-disc h3 {
+  flex-grow: 2;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-logo .main__cart-item-disc p {
+  flex-grow: 1;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-logo .main__cart-item-disc p span {
+  font-weight: 600;
+  color: #575757;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #656565;
+  flex-grow: 1;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-quantity {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-quantity input {
+  width: 54px;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #656565;
+  text-align: center;
+  padding: 4px 0 4px 0;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-quantity input::-webkit-outer-spin-button,
+.main__cart .main__cart-container .main__cart-item .main__cart-item-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-shipping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-shipping p {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #656565;
+  text-transform: uppercase;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #656565;
+  flex-grow: 1;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-action {
+  background-color: #ffffff;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  flex-grow: 1;
+}
+.main__cart .main__cart-container .main__cart-item .main__cart-item-action i {
+  font-size: 16px;
+  color: #c0c0c0;
 }
 
 * {
