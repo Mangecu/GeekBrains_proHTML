@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/6de9621b6b.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../GeekBrains_proHTML/src/layout/styles/style.css">
+   <title>Shopping Cart</title>
+</head>
+<body>
+<div class="header__wrap">
+   <header class="header container">
+      <a href="index.html" class="header__logo">
+         <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/logo.png" alt="logo">
+         bran<span>d</span>
+      </a>
+      <form action="#" class="header__form">
+         <div class="header__form-wrap">
+            <button class="header__browse-btn">
+               browse <i class="fa-solid fa-sort-down"></i>
+            </button>
+            <label>
+               <input class="header__browse-searsh" placeholder="Search for Item..."  type="text">
+            </label>
+            <button class="header__browse-searsh-btn" type="submit">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+         </div>
+      </form>
+      <div class="header__login">
+         <a class="header__cart" href="#">
+            <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/svg/cart.svg" alt="cart">
+         </a>
+         <button class="header__login-btn">
+            my account <i class="fa-solid fa-sort-down"></i>
+         </button>
+      </div>
+   </header>
+</div>
+<nav class="header__navigation container">
+   <ul class="header__nav-list">
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Home</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Man</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Women</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Kids</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Accoseriese</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Featured</a>
+      </li>
+      <li class="header__nav-item">
+         <a href="#" class="header__nav-link">Hot Deals</a>
+      </li>
+   </ul>
+</nav>
+<nav class="header__breadcrumbs-wrap">
+   <div class="header__nav-breadcrumbs container">
+      <div class="header__breadcrumbs-name">
+         new arrivals
+      </div>
+      <ul class="header__breadcrumbs">
+         <li><a href="#">home</a></li>
+         <li><a href="#">men</a></li>
+         <li class="header__breadcrumb-active">new arrivals</li>
+      </ul>
+   </div>
+</nav>
+<main class="main">
+   <section class="main__cart container">
+      <ul class="main__cart-top">
+         <li>Product Details</li>
+         <li>unite Price</li>
+         <li>Quantity</li>
+         <li>shipping</li>
+         <li>Subtotal</li>
+         <li>ACTION</li>
+      </ul>
+      <div class="main__cart-container">
+         <div class="main__cart-item">
+            <div class="main__cart-item-logo">
+               <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/Shopping%20Cart_Item_1.png" alt="Cart_Item_1">
+               <div class="main__cart-item-disc">
+                  <h3>Mango People T-shirt</h3>
+                  <p><span>Color: </span>Red</p>
+                  <p><span>Size: </span>XII</p>
+               </div>
+            </div>
+            <div class="main__cart-item-price">
+               $150
+            </div>
+            <div class="main__cart-item-quantity">
+               <input type="number" placeholder="2">
+            </div>
+            <div class="main__cart-item-shipping">
+               <p>free</p>
+            </div>
+            <div class="main__cart-item-subtotal">
+               $300
+            </div>
+            <button class="main__cart-item-action">
+               <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+         </div>
+      </div>
+   </section>
+   <section class="main__subscribe-wrap">
+      <div class="main__subscribe container">
+         <div class="main__subscribe-leftBlock">
+            <div class="main__subscribe-units">
+               <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/reviewPerson.png" alt="unit_img">
+               <div class="main__subscribe-info">
+                  <p class="main__subscribe-discr">
+                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                  </p>
+                  <div class="main__subscribe-name">
+                     <h2>Bin Burhan</h2>
+                     <h3>Dhaka, Bd</h3>
+                  </div>
+               </div>
+            </div>
+            <ul class="main__subscribe-slider">
+               <li class="main__slider-indicator"></li>
+               <li class="main__slider-indicator"></li>
+               <li class="main__slider-indicator"></li>
+            </ul>
+         </div>
+         <div class="main__subscribe-line"></div>
+         <div class="main__subscribe-rightBlock">
+            <div class="main__subscribe-promo">
+               <h2>Subscribe</h2>
+               <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
+               <form class="main__subscribe-form">
+                  <input type="email" placeholder="Enter Your Email">
+                  <button>Subscribe</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
+<footer class="footer">
+   <section class="footer__nav container">
+      <div class="footer__top">
+         <a href="index.html" class="footer__logo">
+            <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/src/assets/imgs/logo.png" alt="footer-logo">
+            bran<span>d</span>
+         </a>
+         <pre>
+Objectively transition extensive data rather than cross functional
+solutions. Monotonectally syndicate multidisciplinary materials
+before go forward benefits. Intrinsicly syndicate an expanded array
+of processes and cross-unit partnerships.
+            </pre>
+         <pre>
+Efficiently plagiarize 24/365 action items and focused infomediaries.
+Distinctively seize superior initiatives for wireless technologies.
+Dynamically optimize.
+            </pre>
+      </div>
+      <div class="footer__category">
+         <h2>category</h2>
+         <ul class="footer__category-list">
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Home</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Shop</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">About</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">How It Works</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Contact</a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer__category">
+         <h2>information</h2>
+         <ul class="footer__category-list">
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Tearms & Condition</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Privacy Policy</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">How to Buy</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">How to Sell</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Promotion</a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer__category">
+         <h2>shop category</h2>
+         <ul class="footer__category-list">
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Men</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Women</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Child</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Apparel</a>
+            </li>
+            <li class="footer__category-item">
+               <a href="#" class="footer__category-link">Brows All</a>
+            </li>
+         </ul>
+      </div>
+   </section>
+   <section class="footer__wrap">
+      <div class="footer__background container">
+         <div class="footer__copy">
+            © 2020  Brand  All Rights Reserved.
+         </div>
+         <div class="footer__social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+         </div>
+      </div>
+   </section>
+</footer>
+</body>
+</html>
