@@ -1,80 +1,25 @@
-
-/*.header__wrap
+.header__wrap
+   display: flex
+   flex-direction: column
    position: fixed
-   width: 100%
+   width: 100vw
    top: 0
    left: 0
    z-index: 1
+   background-color: #ffffff
    .header
-      min-height: 100px
       display: flex
       flex-direction: row
       flex-wrap: wrap
       align-items: center
+      min-height: 100px
+      width: 100vw
       box-shadow: 0 0 10px 0 rgba(0,0,0,0.17)
       border-bottom: 1px solid #ececec
-      .header__logo
-
-      .header__form
-         flex-grow: 1
-         display: flex
-         flex-direction: row
-         .header__form-wrap
-            height: 37px
-            display: flex
-            flex-direction: row
-            align-items: center
-            .header__browse-btn
-               height: 37px
-               text-transform: capitalize
-               font-family: "Lato", sans-serif
-               font-size: 14px
-               font-weight: 300
-               background-color: #f8f8f8
-               border: 1px solid #e6e6e6
-               border-radius: 3px 0 0 3px
-               padding: 0 8px 0 14px
-               i
-                  transform: translateY(-15%)
-                  color: #838383
-                  padding-left: 5px
-            .header__browse-searsh
-               height: 37px
-               border-top: 1px solid #e6e6e6
-               border-bottom: 1px solid #e6e6e6
-               width: 18.16vw
-               min-width: 125px
-               padding-left: 15px
-               &::placeholder
-                  color: #a4a4a4
-                  font-weight: 300
-                  font-size: 14px
-            .header__browse-searsh-btn
-               height: inherit
-               border: 1px solid #e6e6e6
-               background-color: #ffffff
-               border-radius: 0 3px 3px 0
-               padding: 0 10px 0 11px
-               i
-                  color: #a4a4a4
-
-.header
-   position: fixed
-   top: 0
-   left: 0
-   width: 100%
-   z-index: 10
-   .header__container
-      display: flex
-      flex-direction: column
       .header__top
          display: flex
          flex-direction: row
-         flex-wrap: wrap
          align-items: center
-         min-height: 100px
-         box-shadow: 0 0 10px 0 rgba(0,0,0,0.17)
-         border-bottom: 1px solid #ececec
          .header__logo
             display: flex
             flex-direction: row
@@ -151,50 +96,51 @@
                   transform: translateY(-17%)
                   padding-left: 5px
                   color: #ffffff
-      .header__navigation
+   .header__navigation
+      display: flex
+      align-items: center
+      min-height: 50px
+      .header__nav-list
+         min-height: 41px
          display: flex
-         justify-content: center
+         flex-direction: row
+         flex-wrap: wrap
          align-items: center
-         min-height: 50px
-         .header__nav-list
-            min-height: 41px
-            display: flex
-            flex-direction: row
-            align-items: center
-            .header__nav-item
-               &:not(:last-child)
-                  margin-right: 2.2vw
-               .header__nav-link
-                  text-transform: uppercase
-                  font-weight: 700
-                  align-self: center
-      .header__breadcrumbs-wrap
-         background-color: #f8f3f4
-         min-height: 148px
-         .header__nav-breadcrumbs
-            min-height: inherit
-            display: flex
-            flex-direction: row
-            align-items: center
-            justify-content: space-between
-            .header__breadcrumbs-name
-               font-size: 24px
-               line-height: 20px
-               font-weight: 900
+         justify-content: center
+         .header__nav-item
+            &:not(:last-child)
+               margin-right: 2.2vw
+            .header__nav-link
                text-transform: uppercase
+               font-weight: 700
+               align-self: center
+   .header__breadcrumbs-wrap
+      background-color: #f8f3f4
+      min-height: 148px
+      .header__nav-breadcrumbs
+         min-height: inherit
+         display: flex
+         flex-direction: row
+         align-items: center
+         justify-content: space-between
+         .header__breadcrumbs-name
+            font-size: 24px
+            line-height: 20px
+            font-weight: 900
+            text-transform: uppercase
+            color: #f16d7f
+         .header__breadcrumbs
+            display: flex
+            flex-direction: row
+            &:nth-child(n)
+               line-height: 20px
+               font-weight: 400
+               text-transform: uppercase
+               color: #636363
+            li + li::before
+               content: "/"
+               color: #636363
+               padding: 0 5px
+            .header__breadcrumb-active
+               font-weight: 700
                color: #f16d7f
-            .header__breadcrumbs
-               display: flex
-               flex-direction: row
-               &:nth-child(n)
-                  line-height: 20px
-                  font-weight: 400
-                  text-transform: uppercase
-                  color: #636363
-               li + li::before
-                  content: "/"
-                  color: #636363
-                  padding: 0 5px
-               .header__breadcrumb-active
-                  font-weight: 700
-                  color: #f16d7f
