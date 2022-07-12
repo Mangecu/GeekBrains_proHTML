@@ -1,13 +1,23 @@
 .header__wrap
-   display: flex
-   flex-direction: column
+   display: grid
+   grid-template-rows: minmax(151px, auto)
+   grid-template-columns: 100vw
    position: fixed
-   width: 100vw
    top: 0
    left: 0
    z-index: 1
    background-color: #ffffff
    .header
+      display: grid
+      grid-template-rows: minmax(100px, auto) 51px
+      .header__top
+         display: grid
+         grid-template-rows: minmax(100px, auto)
+         //grid-template-columns: 183px minmax(303px, 403px) 188px
+         grid-template-columns: 183px auto
+         grid-column-gap: 37px
+
+   /*.header
       display: flex
       flex-direction: row
       flex-wrap: wrap
@@ -95,7 +105,7 @@
                   transform: translateY(-17%)
                   padding-left: 5px
                   color: #ffffff
-   .header__navigation
+   /*.header__navigation
       display: flex
       align-items: center
       min-height: 50px
@@ -113,7 +123,7 @@
                text-transform: uppercase
                font-weight: 700
                align-self: center
-   .header__breadcrumbs-wrap
+   /*.header__breadcrumbs-wrap
       background-color: #f8f3f4
       min-height: 148px
       .header__nav-breadcrumbs
