@@ -18,7 +18,7 @@
                   <img class="logo__img" src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/logo.png" alt="">
                   <div class="logo__name">bran<span>d</span></div>
                </a>
-               <form class="input header__input">
+               <form class="input input--header">
                   <details class="accordion">
                      <summary class="accordion__btn">
                         Browse
@@ -50,8 +50,8 @@
                         </ul>
                      </div>
                   </details>
-                  <input type="text" class="input__field input__field_header" name="search" placeholder="Search for Item...">
-                  <button class="button input__btn_header">
+                  <input type="text" class="input__field input__field--header" name="search" placeholder="Search for Item...">
+                  <button class="button input__btn--header">
                      <i class="fas fa-search"></i>
                   </button>
                </form>
@@ -59,36 +59,32 @@
                   <svg class="header__cart-icon" width="34" height="31">
                      <use href="assets/image/svg/sprite.svg#cart"></use>
                   </svg>
-                  <button class="button header__button">
+                  <button class="button button--header">
                      My Account
-                     <div class="header__arrow-icon">
-                        <i class="fas fa-caret-down"></i>
-                     </div>
+                     <i class="fas fa-caret-down"></i>
                   </button>
                </div>
             </div>
          </div>
       </div>
-      <nav class="navigation header__navigation">
-         <div class="container">
-            <ul class="navigation__list">
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">home</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">man</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">women</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">kids</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">accessories</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">featured</a></li>
-               <li class="navigation__item navigation__item_header"><a href="#" class="navigation__link">hot deals</a></li>
-            </ul>
-         </div>
+      <nav class="navigation navigation--header container">
+         <ul class="navigation__list">
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">home</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">man</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">women</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">kids</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">accessories</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">featured</a></li>
+            <li class="navigation__item navigation__item--header"><a href="#" class="navigation__link">hot deals</a></li>
+         </ul>
       </nav>
    </header>
    <main class="preview">
       <section class="top">
          <div class="top__content container">
             <div class="top__title">
-               <h1 class="top__title_first">the brand</h1>
-               <h2 class="top__title_second">of luxerious <span>fashion</span></h2>
+               <h1 class="top__title--first">the brand</h1>
+               <h2 class="top__title--second">of luxerious <span>fashion</span></h2>
             </div>
          </div>
       </section>
@@ -96,30 +92,110 @@
          <div class="offers__item">
             <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Index_Offer_1.png" alt="offer1">
             <div class="offers__title">
-               <h2 class="offers__title_type">hot deal</h2>
-               <h3 class="offers__title_category">for men</h3>
+               <h2 class="offers__title--type">hot deal</h2>
+               <h3 class="offers__title--category">for men</h3>
             </div>
          </div>
          <div class="offers__item">
             <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Index_Offer_2.png" alt="offer2">
             <div class="offers__title">
-               <h2 class="offers__title_type">luxirous & trendy</h2>
-               <h3 class="offers__title_category">accesories</h3>
+               <h2 class="offers__title--type">luxirous & trendy</h2>
+               <h3 class="offers__title--category">accesories</h3>
             </div>
          </div>
          <div class="offers__item">
             <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Index_Offer_3.png" alt="offer3">
             <div class="offers__title">
-               <h2 class="offers__title_type">30% offer</h2>
-               <h3 class="offers__title_category">women</h3>
+               <h2 class="offers__title--type">30% offer</h2>
+               <h3 class="offers__title--category">women</h3>
             </div>
          </div>
          <div class="offers__item">
             <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Index_Offer_4.png" alt="offer4">
             <div class="offers__title">
-               <h2 class="offers__title_type">new arrivals</h2>
-               <h3 class="offers__title_category">for kids</h3>
+               <h2 class="offers__title--type">new arrivals</h2>
+               <h3 class="offers__title--category">for kids</h3>
             </div>
+         </div>
+      </section>
+      <section class="fetured container">
+         <div class="fetured__name">
+            <h2 class="fetured__title">fetured items</h2>
+            <p class="fetured__subtitle">Shop for items based on what we featured in this week</p>
+         </div>
+         <div class="fetured__wrap">
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_1.jpg" alt="Featured_Item_1">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_2.jpg" alt="Featured_Item_2">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_3.jpg" alt="Featured_Item_3">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_4.jpg" alt="Featured_Item_4">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_5.jpg" alt="Featured_Item_5">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_6.jpg" alt="Featured_Item_6">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_7.jpg" alt="Featured_Item_7">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
+            <a href="#" class="card card--fetured">
+               <div class="card__img">
+                  <img src="https://raw.githubusercontent.com/Mangecu/GeekBrains_proHTML/gh_project/assets/image/img/Featured_Item_8.jpg" alt="Featured_Item_8">
+               </div>
+               <div class="card__info card__info--fetured">
+                  <h3 class="card__name">Mango People T-shirt</h3>
+                  <div class="card__price">$<span>52.00</span></div>
+               </div>
+            </a>
          </div>
       </section>
    </main>
