@@ -1,18 +1,28 @@
 .navigation
    font-family: "Lato", sans-serif
-
-   .navigation__list
+   .navigation__list--header
       display: flex
       justify-content: center
       gap: 48px
-      .navigation__item
+      //.navigation__item
+
+      .navigation__item--header
          font-size: 14px
          line-height: 13px
          font-weight: 700
          text-transform: uppercase
-      .navigation__item--header
          padding: 19px 0 16px
-         /*&:hover
-            border-bottom: 3px solid var(--pink-1)
-         .navigation__link
+         .navigation__link--header
             color: var(--black)
+   .navigation__list--footer
+      display: flex
+      flex-direction: column
+      gap: 2px
+      .navigation__item--footer
+         font-family: "Lato", sans-serif
+         font-size: 16px
+         font-weight: 400
+         letter-spacing: 0.025em
+         line-height: 42px
+         .navigation__link--footer
+            color: var(--gray-13)

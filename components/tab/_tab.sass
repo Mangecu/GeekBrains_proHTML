@@ -1,0 +1,13 @@
+.tab
+   display: inline-block
+   position: relative
+   .tab__state
+      width: 38px
+      height: 4px
+      background-color: var(--gray-12)
+   .tab__input
+      position: absolute
+      outline: none
+      clip: rect(0,0,0,0)
+      &:checked ~ .tab__state
+         background-color: var(--pink-2)

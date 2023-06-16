@@ -1,21 +1,16 @@
-.card
-   .card__img
-      width: 261px
-      height: 279px
-      img
-         width: 100%
-         height: 100%
-         object-fit: cover
+.card--product
+   display: flex
+   flex-direction: column
+   justify-content: space-between
    .card__info
       font-family: "Lato", sans-serif
       text-transform: uppercase
       font-weight: 700
-   .card__info--fetured
+   .card__info--product
       padding: 19px 15px
       display: flex
       flex-direction: column
       gap: 17px
-
       .card__name
          font-size: 13px
          color: var(--black)
@@ -24,3 +19,27 @@
          font-size: 16px
          color: var(--pink-2)
          line-height: 14px
+   .card__img
+      height: 100%
+      position: relative
+      img
+         object-fit: cover
+         height: 100%
+         width: 100%
+      .card__img--mask
+         display: none
+         position: absolute
+         background: rgba(58, 56, 56, 0.6)
+         width: 100%
+         height: 100%
+         top: 0
+         left: 0
+         flex-direction: column
+         align-items: center
+         justify-content: center
+   &:hover .card__img--mask
+      display: flex
+   &:hover .card__info--product
+      box-shadow: 0 5px 8px 0 rgba(0,0,0,0.15)
+
+
