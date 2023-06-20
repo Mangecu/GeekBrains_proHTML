@@ -7,24 +7,41 @@
    line-height: 32px
    letter-spacing: 0.025em
    color: var(--black)
-.input--header
+   .input__field
+      height: 100%
+.input_header
    height: 38px
    max-width: 403px
    border: 1px solid var(--gray-6)
    border-radius: 3px
    flex-grow: 1
-   .input__field
-      height: 100%
-   .input__field--header
+   .input__field_header
       border-right: 1px solid var(--gray-6)
       border-left: 1px solid var(--gray-6)
       padding-left: 15px
       flex-grow: 1
       &::placeholder
          color: var(--gray-9)
-   .input__btn--header
+   .input__btn_header
       padding: 0 10px 0 11px
       color: var(--gray-9)
+.input_subscribe
+   height: 46px
+   width: 100%
+   .input__field_subscribe
+      flex-grow: 1
+      background-color: var(--gray-17)
+      border-radius: 23px 0 0 23px
+      padding-left: 28px
+      &::placeholder
+         opacity: 0.67
+   .input__btn_subscribe
+      height: inherit
+      padding: 0 20px
+      background-color: var(--pink-2)
+      color: var(--white)
+      border-radius: 0 23px 23px 0
+
 
 
 
