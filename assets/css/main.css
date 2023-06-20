@@ -108,6 +108,9 @@
   transform: rotate(180deg);
 }
 .accordion .accordion__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 262px;
   position: absolute;
   top: 38px;
@@ -115,25 +118,36 @@
   background-color: var(--white);
   padding: 19px 13px 22px;
   border-radius: 5px;
-  border: 1px solid black;
 }
 .accordion .accordion__list::before {
   content: "";
   border: 10px solid transparent;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -3px;
+  left: 65px;
+  rotate: 135deg;
+  background-color: var(--white);
 }
-.accordion .accordion__list .accordion__title {
+.accordion .accordion__list .accordion__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.accordion .accordion__list .accordion__wrap .accordion__title {
   font-family: "Lato", sans-serif;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: var(--black-2);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-4);
 }
-.accordion .accordion__list .accordion__items .accordion__item {
+.accordion .accordion__list .accordion__wrap .accordion__items {
+  padding-left: 5px;
+}
+.accordion .accordion__list .accordion__wrap .accordion__items .accordion__item {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 28px;

@@ -13,10 +13,12 @@
       .accordion__arrow-icon
          color: var(--gray-10)
          transition: 300ms
-
    &[open] .accordion__arrow-icon
       transform: rotate(180deg)
    .accordion__list
+      display: flex
+      flex-direction: column
+      gap: 30px
       width: 262px
       position: absolute
       top: 38px
@@ -24,32 +26,37 @@
       background-color: var(--white)
       padding: 19px 13px 22px
       border-radius: 5px
-      border: 1px solid black
       &::before
          content: ''
-
          border: 10px solid transparent
-
          position: absolute
-         top: 0
-         left: 0
-
-      .accordion__title
-         font-family: "Lato", sans-serif
-         font-size: 14px
-         line-height: 32px
-         font-weight: 700
-         text-transform: uppercase
-         letter-spacing: 0.025em
-         color: var(--black-2)
-      .accordion__items
-         .accordion__item
+         top: -3px
+         left: 65px
+         rotate: 135deg
+         background-color: var(--white)
+      .accordion__wrap
+         display: flex
+         flex-direction: column
+         gap: 16px
+         .accordion__title
             font-family: "Lato", sans-serif
             font-size: 14px
-            line-height: 28px
+            line-height: 11px
             font-weight: 700
+            text-transform: uppercase
             letter-spacing: 0.025em
-            color: var(--gray-16)
+            color: var(--black-2)
+            padding-bottom: 10px
+            border-bottom: 1px solid var(--gray-4)
+         .accordion__items
+            padding-left: 5px
+            .accordion__item
+               font-family: "Lato", sans-serif
+               font-size: 14px
+               line-height: 28px
+               font-weight: 700
+               letter-spacing: 0.025em
+               color: var(--gray-16)
 
 
 
