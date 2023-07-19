@@ -1,7 +1,7 @@
 .accordion
    height: 100%
    position: relative
-   .accordion__btn
+   &__btn
       height: 100%
       display: flex
       align-items: center
@@ -10,12 +10,10 @@
       white-space: nowrap
       background-color: var(--gray-7)
       background-image: linear-gradient(180.0deg, var(--gray-2) 0%, var(--gray-3) 100%)
-      .accordion__arrow-icon
-         color: var(--gray-10)
-         transition: 300ms
-   &[open] .accordion__arrow-icon
-      transform: rotate(180deg)
-   .accordion__list
+   &__arrow-icon
+      color: var(--gray-10)
+      transition: 300ms
+   &__list
       display: flex
       flex-direction: column
       gap: 30px
@@ -34,31 +32,29 @@
          left: 65px
          rotate: 135deg
          background-color: var(--white)
-      .accordion__wrap
-         display: flex
-         flex-direction: column
-         gap: 16px
-         .accordion__title
-            font-family: "Lato", sans-serif
-            font-size: 14px
-            line-height: 11px
-            font-weight: 700
-            text-transform: uppercase
-            letter-spacing: 0.025em
-            color: var(--black-2)
-            padding-bottom: 10px
-            border-bottom: 1px solid var(--gray-4)
-         .accordion__items
-            padding-left: 5px
-            .accordion__item
-               font-family: "Lato", sans-serif
-               font-size: 14px
-               line-height: 28px
-               font-weight: 700
-               letter-spacing: 0.025em
-               color: var(--gray-16)
-
-
-
-
+   &__wrap
+      display: flex
+      flex-direction: column
+      gap: 16px
+   &__title
+      font-family: "Lato", sans-serif
+      font-size: 14px
+      line-height: 11px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      color: var(--black-2)
+      padding-bottom: 10px
+      border-bottom: 1px solid var(--gray-4)
+   &__items
+      padding-left: 5px
+   &__item
+      font-family: "Lato", sans-serif
+      font-size: 14px
+      line-height: 28px
+      font-weight: 700
+      letter-spacing: 0.025em
+      color: var(--gray-16)
+   &[open] .accordion__arrow-icon
+      transform: rotate(180deg)
 

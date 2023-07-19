@@ -6,26 +6,31 @@
    flex-wrap: wrap
    justify-content: space-between
    align-content: space-between
-   .category__item
+
+   &__item
       position: relative
-      .category__badge
-         font-family: "Lato", sans-serif
-         font-weight: 900
-         text-transform: uppercase
-         letter-spacing: 0.025em
-         background-color: var(--white)
-         padding: 16px 20px
-         display: flex
-         flex-direction: column
-         gap: 12px
-         position: absolute
-         top: 26px
-         left: 0
-         .category__badge_title
-            font-size: 18px
-            color: var(--black)
-            line-height: 14px
-         .category__badge_subtitle
-            font-size: 30px
-            color: var(--pink-2)
-            line-height: 24px
+
+   &__badge
+      font-family: "Lato", sans-serif
+      font-weight: 900
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      background-color: var(--white)
+      padding: 16px 20px
+      display: flex
+      flex-direction: column
+      gap: 12px
+      position: absolute
+      top: 26px
+      left: 0
+
+      &_title
+         font-size: 18px
+         color: var(--black)
+         line-height: 14px
+
+      &_subtitle
+         font-size: 30px
+         color: var(--pink-2)
+         line-height: 24px
+

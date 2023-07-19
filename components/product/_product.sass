@@ -4,29 +4,34 @@
    flex-direction: column
    align-items: center
    gap: 60px
-   .product__name
+
+   &__name
       font-family: "Lato", sans-serif
       letter-spacing: 0.025em
       display: flex
       flex-direction: column
       align-items: center
       gap: 16px
-      .product__title
-         text-transform: capitalize
-         font-size: 30px
-         line-height: 23px
-         font-weight: 700
-         color: var(--black)
-      .product__subtitle
-         font-size: 14px
-         line-height: 11px
-         font-weight: 400
-         color: var(--gray-8)
-   .product__wrap
+
+   &__title
+      text-transform: capitalize
+      font-size: 30px
+      line-height: 23px
+      font-weight: 700
+      color: var(--black)
+
+   &__subtitle
+      font-size: 14px
+      line-height: 11px
+      font-weight: 400
+      color: var(--gray-8)
+
+   &__wrap
       width: 100%
       display: grid
       grid-template-columns: repeat(auto-fill, 261px)
       gap: 39px 0
       justify-content: space-between
+
 
 

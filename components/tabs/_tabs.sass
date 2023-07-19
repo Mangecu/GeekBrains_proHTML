@@ -1,20 +1,23 @@
 .tabs
-   .tabs__scroll
+
+   &__scroll
       display: flex
       gap: 13px
       margin-left: 112px
-      .tabs__tab_subscribe
+
+   &__tab
+
+      &_subscribe
          width: 38px
          height: 4px
          background-color: var(--gray-12)
-   .tabs__input
+
+   &__input
       position: absolute
       outline: none
       clip: rect(0,0,0,0)
+
       &[id="#first-item"]:checked ~ .tabs__scroll .tabs__tab[for="#first-item"],
       &[id="#second-item"]:checked ~ .tabs__scroll .tabs__tab[for="#second-item"],
       &[id="#third-item"]:checked ~ .tabs__scroll .tabs__tab[for="#third-item"]
          background-color: var(--pink-2)
-
-
-

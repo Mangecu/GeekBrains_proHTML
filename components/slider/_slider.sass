@@ -1,6 +1,7 @@
 .slider
    background-color: var(--gray-4)
-   .slider__content
+
+   &__content
       min-height: 613px
       background-image: url("../../assets/image/img/Index_topHeaderBack.png")
       background-repeat: no-repeat
@@ -8,23 +9,26 @@
       background-position-x: 80%
       display: flex
       align-items: center
-      .slider__title
-         display: flex
-         flex-direction: column
-         gap: 20px
-         font-family: "Lato", sans-serif
-         font-weight: 900
-         letter-spacing: 0.025em
-         color: var(--black)
-         text-transform: uppercase
-         border-left: 12px solid var(--pink-2)
-         padding-left: 12px
-         .slider__title_first
-            font-size: 60px
-            line-height: 45px
-         .slider__title_second
-            font-size: 40px
-            line-height: 32px
-            span
-               color: var(--pink-2)
 
+   &__title
+      display: flex
+      flex-direction: column
+      gap: 20px
+      font-family: "Lato", sans-serif
+      font-weight: 900
+      letter-spacing: 0.025em
+      color: var(--black)
+      text-transform: uppercase
+      border-left: 12px solid var(--pink-2)
+      padding-left: 12px
+
+      &_first
+         font-size: 60px
+         line-height: 45px
+
+      &_second
+         font-size: 40px
+         line-height: 32px
+
+         span
+            color: var(--pink-2)
