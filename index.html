@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../GeekBrains_proHTML/assets/css/main.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	<title>Main Page</title>
 </head>
 <body>
@@ -22,9 +21,9 @@
                   <details class="accordion">
                      <summary class="accordion__btn">
                         Browse
-                        <div class="arrow-icon accordion__arrow-icon">
-                           <i class="fas fa-caret-down"></i>
-                        </div>
+                        <svg class="arrow-icon accordion__arrow-icon" width="9" height="14">
+                           <use href="assets/image/svg/sprite.svg#caret-down"></use>
+                        </svg>
                      </summary>
                      <div class="accordion__list">
                         <div class="accordion__wrap">
@@ -56,7 +55,9 @@
                   </details>
                   <input type="text" class="input__field input__field_header" name="search" placeholder="Search for Item...">
                   <button class="button input__btn_header">
-                     <i class="fas fa-search"></i>
+                     <svg class="search-icon button__search-icon" width="14" height="14">
+                        <use href="assets/image/svg/sprite.svg#search"></use>
+                     </svg>
                   </button>
                </form>
                <div class="header__actions">
@@ -65,7 +66,9 @@
                   </svg>
                   <button class="button button_header">
                      My Account
-                     <i class="fas fa-caret-down"></i>
+                     <svg class="arrow-icon button__arrow-icon" width="9" height="14">
+                        <use href="assets/image/svg/sprite.svg#caret-down"></use>
+                     </svg>
                   </button>
                </div>
             </div>
@@ -267,9 +270,9 @@
          </div>
          <button class="button button_product">
             Browse All Product
-            <div class="long-arrow-icon ">
-               <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
+            <svg class="long-arrow-icon" height="18" width="16">
+               <use href="assets/image/svg/sprite.svg#long-arrow"></use>
+            </svg>
          </button>
       </section>
       <section class="feature container">
@@ -444,11 +447,41 @@
             <div class="footer__copy">© <span class="footer__date">2023</span>  Brand  All Rights Reserved.</div>
             <nav class="footer__social">
                <ul class="footer__list">
-                  <li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-twitter"></i></a></li>
-                  <li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-pinterest-p"></i></a></li>
-                  <li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">
+                        <svg class="facebook-icon" width="10" height="16">
+                           <use href="assets/image/svg/sprite.svg#facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">
+                        <svg class="twitter-icon" width="16" height="16">
+                           <use href="assets/image/svg/sprite.svg#twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">
+                        <svg class="linkedin-icon" width="14" height="16">
+                           <use href="assets/image/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">
+                        <svg class="pinterest-icon" width="12" height="16">
+                           <use href="assets/image/svg/sprite.svg#pinterest"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">
+                        <svg class="google-icon" width="20" height="16">
+                           <use href="assets/image/svg/sprite.svg#google"></use>
+                        </svg>
+                     </a>
+                  </li>
                </ul>
             </nav>
          </div>
