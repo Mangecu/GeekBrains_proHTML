@@ -99,3 +99,9 @@ label {
 legend {
     display: block;
 }
+
+/* Custom */
+
+* {
+    font-family: "Lato", sans-serif;
+}

@@ -2,17 +2,30 @@
 
    &__wrap
       padding-top: 98px
-      //height: 927px
-      //display: flex
-      //flex-direction: column
-      //flex-wrap: wrap
-      //justify-content: space-between
-      //align-content: space-between
       display: grid
-      grid-template-areas: "item_first "
+      justify-content: space-between
+      row-gap: 20px
+      grid-template-areas: "item_first item_third" "item_first item_fourth" "item_second item_fourth"
+
+      @media all and (max-width: 1200px)
+         grid-template-areas: "item_first" "item_third" "item_fourth" "item_second"
+         justify-content: center
+
 
    &__item
       position: relative
+
+      &_first
+         grid-area: item_first
+
+      &_second
+         grid-area: item_second
+
+      &_third
+         grid-area: item_third
+
+      &_fourth
+         grid-area: item_fourth
 
    &__badge
       font-family: "Lato", sans-serif
