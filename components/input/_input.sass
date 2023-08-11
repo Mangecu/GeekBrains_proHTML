@@ -1,0 +1,63 @@
+.input
+   display: flex
+   align-items: center
+   font-family: "Lato", sans-serif
+   font-size: 14px
+   font-weight: 300
+   line-height: 32px
+   letter-spacing: 0.025em
+   color: var(--black)
+
+   &_header
+      height: 38px
+      max-width: 403px
+      border: 1px solid var(--gray-6)
+      border-radius: 3px
+      flex-grow: 1
+
+   &_subscribe
+      height: 46px
+      width: 100%
+
+   &__field
+      height: 100%
+
+      &_header
+         border-right: 1px solid var(--gray-6)
+         border-left: 1px solid var(--gray-6)
+         padding-left: 15px
+         flex-grow: 1
+
+         &::placeholder
+            color: var(--gray-9)
+
+      &_subscribe
+         flex-grow: 1
+         background-color: var(--gray-17)
+         border-radius: 23px 0 0 23px
+         padding-left: 28px
+
+         &::placeholder
+            opacity: 0.67
+
+   &__btn
+
+      &_header
+         height: inherit
+         padding: 0 11px
+         color: var(--gray-9)
+         display: flex
+         align-items: center
+
+      &_subscribe
+         height: inherit
+         padding: 0 20px
+         background-color: var(--pink-2)
+         color: var(--white)
+         border-radius: 0 23px 23px 0
+
+
+
+
+
+

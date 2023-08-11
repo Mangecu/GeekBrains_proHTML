@@ -1,0 +1,53 @@
+.category
+
+   &__wrap
+      padding-top: 98px
+      display: grid
+      justify-content: space-between
+      row-gap: 20px
+      grid-template-areas: "item_first item_third" "item_first item_fourth" "item_second item_fourth"
+
+      @media all and (max-width: 1200px)
+         grid-template-areas: "item_first" "item_third" "item_fourth" "item_second"
+         justify-content: center
+
+
+   &__item
+      position: relative
+
+      &_first
+         grid-area: item_first
+
+      &_second
+         grid-area: item_second
+
+      &_third
+         grid-area: item_third
+
+      &_fourth
+         grid-area: item_fourth
+
+   &__badge
+      font-family: "Lato", sans-serif
+      font-weight: 900
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      background-color: var(--white)
+      padding: 16px 20px
+      display: flex
+      flex-direction: column
+      gap: 12px
+      position: absolute
+      top: 26px
+      left: 0
+
+      &_title
+         font-size: 18px
+         color: var(--black)
+         line-height: 14px
+
+      &_subtitle
+         font-size: 30px
+         color: var(--pink-2)
+         line-height: 24px
+

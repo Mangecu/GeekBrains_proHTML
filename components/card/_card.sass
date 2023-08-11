@@ -1,0 +1,54 @@
+.card
+
+   &_product
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+   &__img
+      height: 100%
+      position: relative
+
+      img
+         object-fit: cover
+         height: 100%
+         width: 100%
+
+      &_mask
+         display: none
+         position: absolute
+         background: rgba(58, 56, 56, 0.6)
+         width: 100%
+         height: 100%
+         top: 0
+         left: 0
+         flex-direction: column
+         align-items: center
+         justify-content: center
+
+   &__info
+      font-family: "Lato", sans-serif
+      text-transform: uppercase
+      font-weight: 700
+
+      &_product
+         padding: 19px 15px
+         display: flex
+         flex-direction: column
+         gap: 17px
+
+   &__name
+      font-size: 13px
+      color: var(--black)
+      line-height: 11px
+
+   &__price
+      font-size: 16px
+      color: var(--pink-2)
+      line-height: 14px
+
+   &:hover .card__img_mask
+      display: flex
+
+   &:hover .card__info_product
+      box-shadow: 0 5px 8px 0 rgba(0,0,0,0.15)
