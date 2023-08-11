@@ -1,3 +1,9 @@
+WARNING on line 6 of ../../components/catalog/_catalog.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 8 of ../../components/catalog/_catalog.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 10 of ../../components/catalog/_catalog.sass:
+This selector doesn't have any properties and will not be rendered.
 @import url(../fonts/fonts.css);
 @import url(../css/reset.css);
 @import url(../css/colors.css);
@@ -604,3 +610,37 @@
     background-color: var(--pink-2); }
   .footer__item:hover .footer__link {
     color: var(--white); }
+
+.breadcrumb {
+  display: flex; }
+  .breadcrumb__list {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--gray-18); }
+    .breadcrumb__list:not(:last-child)::after {
+      display: inline-block;
+      content: "/";
+      margin: 0 0.25em; }
+    .breadcrumb__list_active {
+      font-weight: 700;
+      color: var(--pink-2); }
+  .breadcrumb__link {
+    color: inherit; }
+
+.navbar {
+  background-color: var(--pink-3); }
+  .navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0; }
+  .navbar__title {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--pink-2); }
+
+.catalog__wrap {
+  display: grid; }

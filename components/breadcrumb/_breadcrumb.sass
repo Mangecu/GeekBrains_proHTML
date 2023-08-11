@@ -1,0 +1,17 @@
+.breadcrumb
+   display: flex
+   &__list
+      font-size: 14px
+      line-height: 20px
+      font-weight: 300
+      text-transform: uppercase
+      color: var(--gray-18)
+      &:not(:last-child)::after
+         display: inline-block
+         content: "/"
+         margin: 0 0.25em
+      &_active
+         font-weight: 700
+         color: var(--pink-2)
+   &__link
+      color: inherit
